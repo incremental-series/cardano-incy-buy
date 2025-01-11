@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  width: max(100%, max-content);
+  grid-template-rows: 60px 1fr 30px;
+  flex-flow: column;
+}
+
+header,
+header div {
+  display: flex;
+  flex-direction: row;
+}
+header {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.highlight {
+  mix-blend-mode: exclusion;
+}
+
+.show-all {
+  max-height: unset !important;
+}

@@ -1,0 +1,11 @@
+.js-invalid {
+  background: repeating-linear-gradient(135deg, var(--color-magenta), transparent);
+}
+
+.js-error {
+  color: var(--color-yellow);
+}
+
+.js-warning {
+  color: var(--color-yellow);
+}

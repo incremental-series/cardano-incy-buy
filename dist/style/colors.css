@@ -1,0 +1,54 @@
+:root {
+  --color-base03:  #1c1c1c;
+  --color-base02:  #262626;
+  --color-base01:  #585858;
+  --color-base00:  #626262;
+  --color-base0:   #808080;
+  --color-base1:   #8a8a8a;
+  --color-base2:   #e4e4e4;
+  --color-base3:   #ffffd7;
+  --color-yellow:  #af8700;
+  --color-orange:  #d75f00;
+  --color-red:     #d70000;
+  --color-magenta: #af005f;
+  --color-violet:  #5f5faf;
+  --color-blue:    #0087ff;
+  --color-cyan:    #00afaf;
+  --color-green:   #5f8700;
+  --color-background: var(--color-base03);
+  --color-background-highlights: var(--color-base02);
+  --color-content-secondary: var(--color-base01);
+  --color-content: var(--color-base0);
+  --color-emphasized-content: var(--color-base1);
+}
+
+html {
+  color-scheme: dark;
+}
+
+html, body {
+  background-color: var(--color-background);
+  color: var(--color-content);
+}
+
+div {
+  border: var(--color-content-secondary);
+}
+
+h1 {
+  color: var(--color-emphasized-content);
+}
+
+a {
+  color: var(--color-blue);
+}
+
+a:visited {
+  color: var(--color-cyan);
+}
+
+input:not([type=button],:disabled):read-only {
+  background-color: var(--color-base02);
+  border-color: var(--color-base00);
+  color: var(--color-emphasized-content);
+}

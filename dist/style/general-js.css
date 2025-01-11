@@ -1,0 +1,27 @@
+.js-hide, div[class*="js-hide-"] {
+  visibility: collapse !important;
+  display: none !important;
+  height: 0 !important; min-height: 0 !important;
+  width: 0 !important; min-width: 0 !important;
+  border: 0; padding: 0;
+}
+
+.js-shimmer {
+  animation: box-shadow 5s linear infinite;
+}
+.js-shimmer:hover {
+  animation: box-shadow 2.5s linear infinite alternate-reverse;
+}
+
+@keyframes box-shadow {
+  0%, 100% { box-shadow: 0 0 1em 0 var(--color-background) }
+  10%  { box-shadow: 0 0 1em 0 var(--color-background-highlights) }
+  20%  { box-shadow: 0 0 2em 0 var(--color-yellow) }
+  30%  { box-shadow: 0 0 1em 0 var(--color-orange) }
+  40%  { box-shadow: 0 0 1em 0 var(--color-red) }
+  50%  { box-shadow: 0 0 2em 0 var(--color-magenta) }
+  60%  { box-shadow: 0 0 1em 0 var(--color-violet) }
+  70%  { box-shadow: 0 0 1em 0 var(--color-blue) }
+  80%  { box-shadow: 0 0 2em 0 var(--color-cyan) }
+  90%  { box-shadow: 0 0 1em 0 var(--color-green) }
+}
